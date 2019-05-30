@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.yangwenb.taoappl">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/cheng"
@@ -11,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/NoAppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".youxuan.YouxuanActivity"></activity>
+        <activity android:name=".huati.HuatiActivity" />
         <activity android:name=".lindang.LindangActivity" />
         <activity android:name=".seek.SeekActivity" />
         <activity android:name=".gou.GouwuActivity" />

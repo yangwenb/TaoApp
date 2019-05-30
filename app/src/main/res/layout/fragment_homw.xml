@@ -85,6 +85,7 @@
                 android:id="@+id/home_imbt_huati"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/huati"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
                 app:layout_constraintEnd_toStartOf="@+id/home_imbt_youxuan"
