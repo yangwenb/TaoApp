@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/b1"
 
     tools:context=".gou.GouwuActivity">
 
@@ -40,8 +39,10 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/gou_rv"
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/b1" />
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
     <RelativeLayout
@@ -53,21 +54,26 @@
 
         <CheckBox
             android:id="@+id/gou_ck_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/check_select"
+            android:button="@null" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/gou_ck_box"
             android:text="全选" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/gou_zongjia"
             android:text="商品总价："
@@ -78,6 +84,7 @@
             android:id="@+id/gou_zongjia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="40dp"
             android:layout_toLeftOf="@id/gou_bt_jeisuan"
