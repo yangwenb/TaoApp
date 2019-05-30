@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@drawable/shape_lin_recy"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/lin_rv_pic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/pic_z"
+        android:layout_toRightOf="@id/lin_rv_pic"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:id="@+id/lin_rv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:id="@+id/lin_rv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin_rv_title"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/pic_z"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/you" />
+
+</RelativeLayout>
