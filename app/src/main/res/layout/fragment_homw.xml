@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarSize="12dp"
+    android:scrollbars="none"
     tools:context=".home.HomeFragment">
 
     <RelativeLayout
@@ -13,10 +13,10 @@
         android:orientation="vertical">
 
         <android.support.constraint.ConstraintLayout
-            android:background="#FDFDFD"
             android:id="@+id/home_const_a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FDFDFD"
             android:orientation="vertical">
 
             <TextView
@@ -137,31 +137,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/home_const_a"
-            android:padding="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/bo_shape"
-            >
+            android:padding="5dp">
 
             <ImageView
-                android:layout_alignParentLeft="true"
                 android:id="@+id/home_pic_laba"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
                 android:src="@drawable/laba" />
 
             <TextView
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:gravity="center"
                 android:text="自营家电清洗服务上线啦" />
 
             <Button
-                android:layout_alignParentRight="true"
-                android:background="@drawable/home_bt_xingqing_shppe"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/home_bt_xingqing_shppe"
                 android:text="详情"
                 android:textSize="10dp" />
         </RelativeLayout>

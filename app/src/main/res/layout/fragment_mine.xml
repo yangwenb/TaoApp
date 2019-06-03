@@ -1,15 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@color/colorAccent"
+    android:scrollbars="none"
     tools:context=".mine.MineFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_marginTop="10dp"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout9"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="我的" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mime_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#EEEEEE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mine_tab" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mine_tab"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_mine_tab"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
+            app:tabMode="fixed">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#FFCCF3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+            <TextView
+                android:id="@+id/mine_tv_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/mine_tv_jifen_text"
+                app:layout_constraintEnd_toStartOf="@+id/mine_tv_youhui"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mine_tv_youhui"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠卷"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/mine_tv_jifen"
+                app:layout_constraintEnd_toStartOf="@+id/mine_tv_guanzhu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mine_tv_jifen" />
+
+            <TextView
+                android:id="@+id/mine_tv_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/mine_tv_youhui"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mine_tv_youhui"
+                app:layout_constraintTop_toTopOf="@+id/mine_tv_youhui" />
+
+            <TextView
+                android:id="@+id/mine_tv_jifen_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#69CA12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mine_tv_jifen"
+                app:layout_constraintStart_toStartOf="@+id/mine_tv_jifen" />
+
+            <TextView
+                android:id="@+id/mine_tv_youhui_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#69CA12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mine_tv_youhui"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/mine_tv_youhui"
+                app:layout_constraintTop_toBottomOf="@+id/mine_tv_youhui" />
+
+            <TextView
+                android:id="@+id/mine_tv_guanzhuw_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#69CA12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mine_tv_guanzhu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/mine_tv_guanzhu"
+                app:layout_constraintTop_toBottomOf="@+id/mine_tv_guanzhu" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="#3F4552"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/mine_tou_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/mine_tou_hua"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mine_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:layout_marginLeft="32dp"
+                android:padding="3dp"
+                android:text="♥~花不开"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/mine_tv_vip"
+                app:layout_constraintStart_toEndOf="@+id/mine_tou_pic"
+                app:layout_constraintTop_toTopOf="@+id/mine_tou_pic" />
+
+            <TextView
+                android:id="@+id/mine_tv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/mine_vip_shape"
+                android:padding="3dp"
+                android:text="黄金会员"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mine_tou_pic"
+                app:layout_constraintEnd_toEndOf="@+id/mine_tv_name"
+                app:layout_constraintStart_toStartOf="@+id/mine_tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/mine_tv_name" />
+
+            <ImageView
+                android:id="@+id/mine_tou_jin"
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/main_jin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

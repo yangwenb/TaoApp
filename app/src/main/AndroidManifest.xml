@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/NoAppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".youxuan.YouxuanActivity"></activity>
+        <activity android:name=".mine.tab.ShouhouActivity"></activity>
+        <activity android:name=".mine.tab.ShouhuoActivity" />
+        <activity android:name=".mine.tab.PinglunActivity" />
+        <activity android:name=".mine.tab.FukuanActivity" />
+        <activity android:name=".mine.tab.DingdanActivity" />
+        <activity android:name=".youxuan.YouxuanActivity" />
         <activity android:name=".huati.HuatiActivity" />
         <activity android:name=".lindang.LindangActivity" />
         <activity android:name=".seek.SeekActivity" />
